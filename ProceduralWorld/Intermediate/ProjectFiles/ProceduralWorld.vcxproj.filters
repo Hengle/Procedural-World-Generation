@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\ProceduralWorld.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{F96E3920-F5AF-4048-BBAD-459D9515E862}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\ProceduralWorld.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\ProceduralWorldEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{A631D240-3B06-43C7-A2B4-BACF22DA6C51}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\ProceduralWorld">
+			<UniqueIdentifier>{E2D0FA38-1BE0-41AC-9547-9489EB766687}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\ProceduralWorld\ProceduralWorld.Build.cs">
+			<Filter>Source\ProceduralWorld</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\ProceduralWorld\ProceduralWorld.cpp">
+			<Filter>Source\ProceduralWorld</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ProceduralWorld\ProceduralWorld.h">
+			<Filter>Source\ProceduralWorld</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\ProceduralWorld\ProceduralWorldGameModeBase.cpp">
+			<Filter>Source\ProceduralWorld</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\ProceduralWorld\ProceduralWorldGameModeBase.h">
+			<Filter>Source\ProceduralWorld</Filter>
+		</ClInclude >
+		<Filter Include="Source\ProceduralWorld\Private">
+			<UniqueIdentifier>{F82E4DB9-74A5-40B6-899E-BD5C4871186E}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\BaseNoise.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Block.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Frequency.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\GeneratedWorld.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\MeshCreatorUtilities.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\MeshData.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\NoiseBase.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\SimplexNoise.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\WorldChunkStats.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\WorldGeneration.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\ProceduralWorld\Public">
+			<UniqueIdentifier>{7E530CB9-5CDA-4BFA-8B7B-62E72326B038}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\BaseNoise.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Block.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Frequency.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\GeneratedWorld.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\MeshCreatorUtilities.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\MeshData.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\NoiseBase.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\SimplexNoise.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\WorldChunkStats.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\WorldGeneration.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
