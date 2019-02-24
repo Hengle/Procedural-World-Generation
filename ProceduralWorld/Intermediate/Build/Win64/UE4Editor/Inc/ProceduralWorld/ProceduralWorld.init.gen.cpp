@@ -19,8 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeProceduralWorld_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/ProceduralWorld",
 				PKG_CompiledIn | 0x00000000,
-				0x85E5D9E8,
-				0x50EAA5A9,
+				0x49CD631C,
+				0xE0FFB23D,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
 			};

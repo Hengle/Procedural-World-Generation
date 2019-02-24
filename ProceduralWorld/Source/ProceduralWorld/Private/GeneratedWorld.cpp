@@ -91,6 +91,7 @@ void AGeneratedWorld::LoadMeshData(TArray<TArray<TArray<Block*>>>& createdGrid, 
 	proceduralMesh->CreateMeshSection_LinearColor(0, meshData->mVertices, meshData->mTriangles, TArray<FVector>(), meshData->mUV, TArray<FLinearColor>(), TArray<FProcMeshTangent>(), true);
 	proceduralMesh->SetMaterial(0, material);
 	proceduralMesh->ContainsPhysicsTriMeshData(true);
+	
 }
 
 Block* AGeneratedWorld::GetBlock(int32 x, int32 y, int32 z)

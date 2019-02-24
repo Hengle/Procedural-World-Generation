@@ -2,7 +2,11 @@
 
 #include "MeshCreatorUtilities.h"
 #include "MeshData.h"
+#include "Tile.h"
 
+const float MeshCreatorUtilities::mTileScale = 0.25f;
+
+/*static*/
 void MeshCreatorUtilities::FaceUp(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -13,9 +17,11 @@ void MeshCreatorUtilities::FaceUp(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData, Direction::Up);
+	AddTriangles(meshData);
 }
 
+/*static*/
 void MeshCreatorUtilities::FaceDown(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -26,9 +32,11 @@ void MeshCreatorUtilities::FaceDown(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData);
+	AddTriangles(meshData);
 }
 
+/*static*/
 void MeshCreatorUtilities::FaceNorth(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -39,9 +47,11 @@ void MeshCreatorUtilities::FaceNorth(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData);
+	AddTriangles(meshData);
 }
 
+/*static*/
 void MeshCreatorUtilities::FaceEast(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -52,9 +62,11 @@ void MeshCreatorUtilities::FaceEast(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData);
+	AddTriangles(meshData);
 }
 
+/*static*/
 void MeshCreatorUtilities::FaceWest(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -65,9 +77,11 @@ void MeshCreatorUtilities::FaceWest(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData);
+	AddTriangles(meshData);
 }
 
+/*static*/
 void MeshCreatorUtilities::FaceSouth(MeshData* meshData, FVector origin)
 {
 	TArray<FVector> vertices;
@@ -78,10 +92,12 @@ void MeshCreatorUtilities::FaceSouth(MeshData* meshData, FVector origin)
 
 	meshData->mVertices.Append(vertices);
 
-	AddTrianglesAndUVs(meshData);
+	AddUVs(meshData);
+	AddTriangles(meshData);
 }
 
-void MeshCreatorUtilities::AddTrianglesAndUVs(MeshData* meshData)
+/*static*/
+void MeshCreatorUtilities::AddTriangles(MeshData* meshData)
 {
 	TArray<int32> triangles;
 	triangles.Add(meshData->mVertices.Num() - 2);
@@ -93,18 +109,36 @@ void MeshCreatorUtilities::AddTrianglesAndUVs(MeshData* meshData)
 	triangles.Add(meshData->mVertices.Num() - 4);
 
 	meshData->mTriangles.Append(triangles);
-
-	AddUVs(meshData);
 }
 
-void MeshCreatorUtilities::AddUVs(MeshData* meshData)
+/*static*/
+void MeshCreatorUtilities::AddUVs(MeshData* meshData, Direction direction)
 {
 	TArray<FVector2D> uv;
-	uv.Add(FVector2D(0, 0));
-	uv.Add(FVector2D(0, 1));
-	uv.Add(FVector2D(1, 1));
-	uv.Add(FVector2D(1, 0));
+	Tile* tilePosition = TexturePosition(direction);
+
+	//uv.Add(FVector2D(0, 0));
+	//uv.Add(FVector2D(0, 1));
+	//uv.Add(FVector2D(1, 1));
+	//uv.Add(FVector2D(1, 0));
+
+	uv.Add(FVector2D(mTileScale * tilePosition->mX, mTileScale * tilePosition->mY + mTileScale));
+	uv.Add(FVector2D(mTileScale * tilePosition->mX, mTileScale * tilePosition->mY));
+	uv.Add(FVector2D(mTileScale * tilePosition->mX + mTileScale, mTileScale * tilePosition->mY));
+	uv.Add(FVector2D(mTileScale * tilePosition->mX + mTileScale, mTileScale * tilePosition->mY + mTileScale));
 
 	meshData->mUV.Append(uv);
 }
 
+/*static*/
+Tile* MeshCreatorUtilities::TexturePosition(Direction direction)
+{
+	switch (direction)
+	{
+	case Direction::Up:
+		return new Tile(2, 3);
+	default:
+	case Direction::Other:
+		return new Tile(3, 3);
+	}
+}

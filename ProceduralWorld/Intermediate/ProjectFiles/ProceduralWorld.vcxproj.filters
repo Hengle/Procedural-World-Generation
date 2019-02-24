@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\ProceduralWorld.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{F96E3920-F5AF-4048-BBAD-459D9515E862}</UniqueIdentifier>
+			<UniqueIdentifier>{7B77A248-1918-47C6-8649-6B0299CFA92B}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\ProceduralWorld.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{A631D240-3B06-43C7-A2B4-BACF22DA6C51}</UniqueIdentifier>
+			<UniqueIdentifier>{41A3697A-A441-4C22-8F5B-D24C1816D697}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -25,7 +25,7 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\ProceduralWorld">
-			<UniqueIdentifier>{E2D0FA38-1BE0-41AC-9547-9489EB766687}</UniqueIdentifier>
+			<UniqueIdentifier>{1F728FCE-3072-4E3F-8C17-B266EBFB1859}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\ProceduralWorld\ProceduralWorld.Build.cs">
 			<Filter>Source\ProceduralWorld</Filter>
@@ -43,12 +43,15 @@
 			<Filter>Source\ProceduralWorld</Filter>
 		</ClInclude >
 		<Filter Include="Source\ProceduralWorld\Private">
-			<UniqueIdentifier>{F82E4DB9-74A5-40B6-899E-BD5C4871186E}</UniqueIdentifier>
+			<UniqueIdentifier>{12C129E5-B9D4-42C5-A2A1-834E0F4CF9C9}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\BaseNoise.cpp">
 			<Filter>Source\ProceduralWorld\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Block.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Enums.cpp">
 			<Filter>Source\ProceduralWorld\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Frequency.cpp">
@@ -66,7 +69,13 @@
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\NoiseBase.cpp">
 			<Filter>Source\ProceduralWorld\Private</Filter>
 		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\PlayerInteractions.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\SimplexNoise.cpp">
+			<Filter>Source\ProceduralWorld\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Tile.cpp">
 			<Filter>Source\ProceduralWorld\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\WorldChunkStats.cpp">
@@ -76,12 +85,15 @@
 			<Filter>Source\ProceduralWorld\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\ProceduralWorld\Public">
-			<UniqueIdentifier>{7E530CB9-5CDA-4BFA-8B7B-62E72326B038}</UniqueIdentifier>
+			<UniqueIdentifier>{3C576781-3B4B-4874-B113-FB18C00C0B5B}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\BaseNoise.h">
 			<Filter>Source\ProceduralWorld\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Block.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Enums.h">
 			<Filter>Source\ProceduralWorld\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Frequency.h">
@@ -99,7 +111,13 @@
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\NoiseBase.h">
 			<Filter>Source\ProceduralWorld\Public</Filter>
 		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\PlayerInteractions.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\SimplexNoise.h">
+			<Filter>Source\ProceduralWorld\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Tile.h">
 			<Filter>Source\ProceduralWorld\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\WorldChunkStats.h">

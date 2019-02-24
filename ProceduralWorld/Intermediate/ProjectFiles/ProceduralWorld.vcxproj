@@ -124,7 +124,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{BA36E7B1-6E03-40F7-9FDE-1C33419E83BB}</ProjectGuid>
+		<ProjectGuid>{1B324AC2-38FE-4DDE-9531-BED151D7DB20}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>ProceduralWorld</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>
@@ -573,22 +573,28 @@
 		<ClInclude Include="..\..\Source\ProceduralWorld\ProceduralWorldGameModeBase.h" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\BaseNoise.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Block.cpp" />
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Enums.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Frequency.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\GeneratedWorld.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\MeshCreatorUtilities.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\MeshData.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\NoiseBase.cpp" />
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\PlayerInteractions.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\SimplexNoise.cpp" />
+		<ClCompile Include="..\..\Source\ProceduralWorld\Private\Tile.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\WorldChunkStats.cpp" />
 		<ClCompile Include="..\..\Source\ProceduralWorld\Private\WorldGeneration.cpp" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\BaseNoise.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Block.h" />
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Enums.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Frequency.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\GeneratedWorld.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\MeshCreatorUtilities.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\MeshData.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\NoiseBase.h" />
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\PlayerInteractions.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\SimplexNoise.h" />
+		<ClInclude Include="..\..\Source\ProceduralWorld\Public\Tile.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\WorldChunkStats.h" />
 		<ClInclude Include="..\..\Source\ProceduralWorld\Public\WorldGeneration.h" />
 	</ItemGroup>

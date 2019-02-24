@@ -3,8 +3,10 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Enums.h"
 
 class MeshData;
+class Tile;
 
 static class PROCEDURALWORLD_API MeshCreatorUtilities
 {
@@ -15,6 +17,10 @@ public:
 	static void FaceEast(MeshData* meshData, FVector origin);
 	static void FaceWest(MeshData* meshData, FVector origin);
 	static void FaceSouth(MeshData* meshData, FVector origin);
-	static void AddTrianglesAndUVs(MeshData* meshData);
-	static void AddUVs(MeshData* meshData);
+	static void AddTriangles(MeshData* meshData);
+	static void AddUVs(MeshData* meshData, Direction direction = Direction::Other);
+	static Tile* TexturePosition(Direction direction);
+
+public:
+	static const float mTileScale;
 };
